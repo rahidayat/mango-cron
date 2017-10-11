@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "mango-cron server",
+  "main": "mango_tree.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahidayat/mango-cron.git"
+  },
+  "keywords": [
+    "firebase",
+    "vue"
+  ],
+  "author": "rahidayat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahidayat/mango-cron/issues"
+  },
+  "homepage": "https://github.com/rahidayat/mango-cron#readme",
+  "dependencies": {
+    "firebase": "^4.5.0",
+    "node-cron": "^1.2.1"
+  }
+}
