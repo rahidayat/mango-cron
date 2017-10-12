@@ -24,7 +24,7 @@ class MangoTree {
     this.fruits = []
     this.stopheigth = 15
     this.healthyStatus = true
-    this.maxAge = 20
+    this.maxAge = 25
     this.harvested = ''
   }
 
@@ -55,7 +55,7 @@ class MangoTree {
       }
       this.fruits.push(new Mango(statuses[randomStatus]))
     }
-    this.harvested += `(${jumlahGood} good, ${jumlahBad} bad)`
+    this.harvested += ` (${jumlahGood} good, ${jumlahBad} bad)`
   }
 }
 
@@ -72,7 +72,7 @@ let mangoTree = new MangoTree()
 
 db.ref('tree').set(mangoTree)
 
-let grow = cron.schedule('*/5 * * * * *', function () {
+let grow = cron.schedule('*/2 * * * * *', function () {
 		if (mangoTree.healthyStatus !== false) {
       mangoTree.grow();
       // console.log(mangoTree);
